@@ -1,5 +1,9 @@
 require_relative '../lib/stack'
 
 describe Stack do
-  it { should be_a(Stack) }
+  subject(:stack) { described_class.new }
+
+  it "is empty by default" do
+    expect(stack).to be_empty
+  end
 end
